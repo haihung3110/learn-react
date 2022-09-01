@@ -13,6 +13,10 @@ class MyComponent extends React.Component{
         })
     }
 
+    handleClickButton = () => {
+        alert('Click button')
+    }
+
     render(){
         
         
@@ -24,9 +28,11 @@ class MyComponent extends React.Component{
                     />
                     Welcome to react : {this.state.name}
                 </div>
-
                 <div className="second">
                     I'm {this.state.age}
+                </div>
+                <div className="third">
+                    <button onClick={() => this.handleClickButton()}>Click me</button>
                 </div>
             </>
             
